@@ -28,3 +28,4 @@ function solution(N,numArr){
     }
 }
 
+// javascript로 풀 수 없음 메모리 초과 남
