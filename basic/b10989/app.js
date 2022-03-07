@@ -18,7 +18,7 @@ function solution(N,numArr){
     }
 
     for(let i = 0; i < N; i++){ //은 10으로 두고 풀기 (주어진 숫자 갯수임 ) //N
-        count[numArr[i]-1]++;
+        count[numArr[i]-1]++; //다른 언어에서는 그냥 numArr를 인풋들어오는 걸로 바꾸고 하면 됨 
     }
 
     for(let i = 0; i < MAX_RANGE; i++){
