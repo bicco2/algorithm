@@ -6,22 +6,20 @@ const [[N], input] = require("fs")
 
 const totArr = [];
 
-recur(input, 0);
-console.log(Math.max(...totArr));
-
 function dfs(sum, array) {
   if (array.length === 2) {
     totArr.push(sum);
     return;
   }
 
-  for (let i = 1; i < arr.length - 1; i++) {
-    const newArr = [...arr.slice(0, i), ...arr.slice(i + 1)];
-    sum += arr[i - 1] * arr[i + 1];
+  for (let i = 1; i < array.length - 1; i++) {
+    let newArr = [...array.slice(0, i), ...array.slice(i + 1)];
+    sum += array[i - 1] * array[i + 1];
     dfs(sum, newArr);
-    sum -= arr[i - 1] * arr[i + 1];
+    sum -= array[i - 1] * array[i + 1];
   }
 }
 
 dfs(0, input);
+
 console.log(Math.max(...totArr));
