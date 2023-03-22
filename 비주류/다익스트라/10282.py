@@ -18,7 +18,7 @@ def dijkstra(start):
 
         # 현재(now) 노드를 computer에서 꺼내온다. i에 할당시킴
         for i in computer[now] :
-            # dist(현재까지 걸리는 시간) + i[1](현재노드를 거쳐서 i[0]으로 갈수있는 시간)을 구해서 distance[i[0(즉, 초기화 되어 있는 i까지 걸리는 시간을 비교해서 더 작은 값을 distance[i[0] 에 할당 시킨다. )
+            # dist(현재까지 걸리는 시간) + i[1](현재노드를 거쳐서 i[0]으로 갈수있는 시간)을 구해서 distance[i[0](즉, 초기화 되어 있는 i까지 걸리는 시간을 비교해서 더 작은 값을 distance[i[0]] 에 할당 시킨다. )
             cost = dist + i[1]
             if cost < distance[i[0]]:
                 distance[i[0]] = cost

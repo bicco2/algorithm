@@ -31,7 +31,7 @@ for _ in range(m):
     edges.append((a, b, c))
 
 negative_cycle = bellman_ford(1)
-print(dist);
+
 # 벨만포드 돌면서 음수 사이클 있으면 true 반환
 if negative_cycle:
     print(-1)
